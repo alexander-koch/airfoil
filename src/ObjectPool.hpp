@@ -1,7 +1,6 @@
 #ifndef __OBJECT_POOL_HPP__
 #define __OBJECT_POOL_HPP__
 
-#include <cstddef>
 #include <vector>
 #include <iostream>
 

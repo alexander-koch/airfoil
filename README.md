@@ -1,7 +1,7 @@
 # Airfoil
 
 This project generates a 3D airplane wing based on the Kutta-Joukowski transformation.
-A circle with a given radius r and two offsets xOffset and yOffset is mapped to
+A circle with a given radius r and two offsets xOffset and yOffset are mapped to
 an airfoil by applying a coordinate of the circle z = x + iy to f(z).
 
 ```
@@ -17,7 +17,7 @@ To build the program, gcc is needed with support for c++11.
 GNU Make should also be installed.
 
 ```
-$ git clone [url]
+$ git clone https://github.com/alexander-koch/airfoil.git
 $ cd airfoil
 $ make
 ```
