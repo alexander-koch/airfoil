@@ -18,6 +18,8 @@ double step_size = 0.01;
 double sigma;
 std::complex<double> I(0.0, 1.0);
 
+#define USE_ASCII false
+
 std::complex<double> cexp(double alpha) {
     return cos(alpha) + I * sin(alpha);
 }
@@ -184,7 +186,7 @@ int main(int argc, char** argv) {
 
     pool.front = currentNode;
     pool.revertCircular();
-    writer.write(string(argv[1]) + ".stl", true);
+    writer.write(string(argv[1]) + ".stl", USE_ASCII);
 
     return 0;
 }
