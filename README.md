@@ -6,7 +6,7 @@ an airfoil by applying a coordinate of the circle z = x + iy to f(z).
 
 ```
 f: C \ {0} ->  C
-f(z) = 1/2 + (z + 1 / z)
+f(z) = 1/2 * (z + 1 / z)
 ```
 
 The 3D Mesh data will be written in a ASCII / Binary STL file.

@@ -34,7 +34,7 @@ double Vec3::length() {
 }
 
 Vec3 Vec3::normalize() {
-    double len = this->length();
+    double len = length();
     return Vec3(x / len, y / len, z / len);
 }
 

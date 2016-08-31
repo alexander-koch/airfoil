@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm>
 #include <complex>
 #include <vector>
 
@@ -14,12 +13,7 @@ double rad2;
 double step_size = 0.01;
 double sigma;
 std::complex<double> I(0.0, 1.0);
-
 #define USE_ASCII false
-
-std::complex<double> cexp(double alpha) {
-    return cos(alpha) + I * sin(alpha);
-}
 
 class Index {
 public:
@@ -100,8 +94,8 @@ int main(int argc, char** argv) {
     // Get chord length
     Vec3 min = points[0].transformed;
     Vec3 max = min;
-    for(unsigned i = 0; i < points.size(); i++) {
-        Vec3 current = points[i].transformed;
+    for(auto &point : points) {
+        Vec3 current = point.transformed;
         if(current.x > max.x) max = current;
     }
     double c = (max - min).length();
